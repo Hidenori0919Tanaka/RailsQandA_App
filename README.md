@@ -29,7 +29,7 @@
 | 質問を削除する                        | delete           | /questions/:id        |  questions#destroy               |
 | 回答する                             | post             | /question/:id/answer  |  answers#create               |
 | ユーザー一覧を表示する                 | get              | /users               |  users#index                    |
-| 管理画面用のログインページを表示する     | get               | /admin/login |        | admin/sessions#new                |
+| 管理画面用のログインページを表示する     | get               | /admin/login         | admin/sessions#new                |
 | （管理画面）質問一覧ページを表示する     | get               | /admin/questions/:id  | admin/questions#index                |
 | （管理画面）質問を削除する		 | delete             | /admin/questions/:id | admin/questions#destroy                |
 | （管理画面）ユーザー一覧ページを表示する  |get                | /admin/users         |  admin/users#index               |
