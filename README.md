@@ -22,7 +22,7 @@
 | 質問一覧を表示する（全て）                | get             | /questions            | questions#index                |
 | 質問一覧を表示する（未解決）              | get             | /questions/unresolved | questions#unresolved                |
 | 質問一覧を表示する（解決済み）            | get             | /questions/resolved   |  questions#solved               |
-| 質問投稿ページを表示する                 | get             | /questions/new |      | questions#new                  |
+| 質問投稿ページを表示する                 | get             | /questions/new       | questions#new                  |
 | 質問投稿をする			  | post            | /questions/create     |  questions#create               |
 | 質問詳細を表示する	                 | get              | /questions/:id        |  questions#show               |
 | 質問編集ページを表示する		| get              | /questions/:id/edit   |  questions#edit               |
