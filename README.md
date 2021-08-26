@@ -22,14 +22,14 @@
 | 質問一覧を表示する（全て）                | get             | /questions            | questions#index                |
 | 質問一覧を表示する（未解決）              | get             | /questions/unresolved | questions#unresolved                |
 | 質問一覧を表示する（解決済み）            | get             | /questions/resolved   |  questions#solved               |
-| 質問投稿ページを表示する                 | get             | /questions/new |      | questions#new
+| 質問投稿ページを表示する                 | get             | /questions/new |      | questions#new                  |
 | 質問投稿をする			  | post            | /questions/create     |  questions#create               |
 | 質問詳細を表示する	                 | get              | /questions/:id        |  questions#show               |
 | 質問編集ページを表示する		| get              | /questions/:id/edit   |  questions#edit               |
 | 質問を削除する                        | delete           | /questions/:id        |  questions#destroy               |
 | 回答する                             | post             | /question/:id/answer  |  answers#create               |
-| ユーザー一覧を表示する                 | get              | /users |              |  users#index
-| 管理画面用のログインページを表示する     | get               | /admin/login |        | admin/sessions#new
+| ユーザー一覧を表示する                 | get              | /users |              |  users#index                    |
+| 管理画面用のログインページを表示する     | get               | /admin/login |        | admin/sessions#new                |
 | （管理画面）質問一覧ページを表示する     | get               | /admin/questions/:id  | admin/questions#index                |
 | （管理画面）質問を削除する		 | delete             | /admin/questions/:id | admin/questions#destroy                |
 | （管理画面）ユーザー一覧ページを表示する  |get                | /admin/users         |  admin/users#index               |
