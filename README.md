@@ -1,22 +1,22 @@
 # RailsQandA_App
 
 # テーブル設計
-| adiom      |    User    |  Question  |   Answer   |
-|:-----------|:-----------|-----------:|:----------:|
-| Id         | Id         | Id         | Id         |
-| Id         | Name       | Title      | Title      |
-| Mail       | Mail       | Text       | Text       |
-|            | Image      | SolvedFlaf | UserId     |
-|            | AdminId    | UserId     | QuestionId |
-| CreateDate | CreateDate | CreateDate | CreateDate |
-| UpdateDate | UpdateDate | UpdateDate | UpdateDate |
+|    users    |  questions  |   answers   |
+|:-----------|-----------:|:----------:|
+| id         | id         |
+| name       | title      | title      |
+| mail       | text       | text       |
+| image      | solved_flaf | user_id     |
+|            | user_id     | question_id |
+| created_at | created_at | created_at |
+| updated_at | updated_at | updated_at |
 
 
 # エンドポイント・コントローラ設計
 |    User                                |  HTTPメソッド  |          エンドポイント   |  コントローラーアクション      |
 |:---------------------------------------|--------------:|:----------------------:|:---------------------------:|
 | ユーザー登録画面を表示する                 | GET            | /users/new            | users#new	                |
-| ユーザー登録をする                       | post            | /users/create         | users#create                |
+| ユーザー登録をする                       | post            | /users         | users#create                |
 |  ログイン画面を表示する                    | get            | /login                | sessions#new                |
 | ログインする                            | post            | /login                | sessions#create                |
 | 質問一覧を表示する（全て）                | get             | /questions            | questions#index                |
