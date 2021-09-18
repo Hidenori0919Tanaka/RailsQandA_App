@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_06_180823) do
+ActiveRecord::Schema.define(version: 2021_09_18_233303) do
 
   create_table "admins", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 2021_09_06_180823) do
   create_table "questions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "title", default: "", null: false
     t.string "text", default: "", null: false
-    t.string "solvedFlag"
+    t.string "solved_flag"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -61,8 +61,8 @@ ActiveRecord::Schema.define(version: 2021_09_06_180823) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "name", null: false
-    t.string "imageName"
-    t.binary "imageBinary"
+    t.string "image_name"
+    t.binary "image_bainary"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
