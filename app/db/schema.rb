@@ -51,8 +51,7 @@ ActiveRecord::Schema.define(version: 2021_09_26_095259) do
     t.string "name", null: false
     t.string "image_name"
     t.binary "image_bainary"
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.boolean "admin_flag"
   end
 
   add_foreign_key "answers", "users"

@@ -7,7 +7,7 @@
 | name       | title      | title      |
 | mail       | text       | text       |
 | image      | solved_flaf | user_id     |
-|            | user_id     | question_id |
+| admin_flg  | user_id     | question_id |
 | created_at | created_at | created_at |
 | updated_at | updated_at | updated_at |
 
