@@ -6,8 +6,8 @@
 | id         | id         |
 | name       | title      | title      |
 | mail       | text       | text       |
-| image      | solved_flaf | user_id     |
-| admin_flg  | user_id     | question_id |
+| image      | solved_flag | user_id     |
+| admin_flag  | user_id     | question_id |
 | created_at | created_at | created_at |
 | updated_at | updated_at | updated_at |
 
